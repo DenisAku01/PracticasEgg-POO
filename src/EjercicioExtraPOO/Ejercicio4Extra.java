@@ -5,7 +5,12 @@
  */
 package EjercicioExtraPOO;
 
-/**
+import Entidad.Cuenta;
+
+/**Crea una clase "Cuenta" que tenga atributos como "saldo" y "titular".
+ * Luego, crea un método "retirar_dinero" que permita retirar una cantidad 
+ * de dinero del saldo de la cuenta. Asegúrate de que el saldo nunca sea 
+ * negativo después de realizar una transacción de retiro.
  *
  * @author denis
  */
@@ -15,7 +20,11 @@ public class Ejercicio4Extra {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Cuenta Cuenta1 = new Cuenta();
+        Cuenta1.registro();
+        Cuenta1.retirar_dinero();
+        
+        
     }
     
 }
