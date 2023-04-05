@@ -5,7 +5,7 @@
  */
 package EjercicioExtraPOO;
 
-import Entidad.Puntos;
+import Entidad.Punto;
 
 /**Definir una clase llamada Puntos que contendrá las coordenadas
  * de dos puntos, sus atributos serán, x1, y1, x2, y2, siendo cada
@@ -22,7 +22,7 @@ public class Ejercicio2Extra {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Puntos objeto1 = new Puntos();
+        Punto objeto1 = new Punto();
         objeto1.crearPuntos();
         System.out.println(objeto1.calcularDistancia());
         

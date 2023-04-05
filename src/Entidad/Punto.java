@@ -16,23 +16,23 @@ import java.util.Scanner;
  *
  * @author denis
  */
-public class Puntos {
-    private float x1;
-    private float x2;
-    private float y1;
-    private float y2;
+public class Punto {
+    private double x1;
+    private double x2;
+    private double y1;
+    private double y2;
 
-    public Puntos() {
+    public Punto() {
     }
 
-    public Puntos(float x1, float x2, float y1, float y2) {
+    public Punto(double x1, double x2, double y1, double y2) {
         this.x1 = x1;
         this.x2 = x2;
         this.y1 = y1;
         this.y2 = y2;
     }
 
-    public float getX1() {
+    public double getX1() {
         return x1;
     }
 
@@ -40,7 +40,7 @@ public class Puntos {
         this.x1 = x1;
     }
 
-    public float getX2() {
+    public double getX2() {
         return x2;
     }
 
@@ -48,7 +48,7 @@ public class Puntos {
         this.x2 = x2;
     }
 
-    public float getY1() {
+    public double getY1() {
         return y1;
     }
 
@@ -56,7 +56,7 @@ public class Puntos {
         this.y1 = y1;
     }
 
-    public float getY2() {
+    public double getY2() {
         return y2;
     }
 
@@ -78,8 +78,8 @@ public class Puntos {
     
     // través de otro método calcular y devolver la
     //  distancia que existe entre los dos puntos que existen en la clase Punto
-    public float calcularDistancia(){
-        float distancia = (float) Math.sqrt( (Math.pow(x2-x1,2))+ (Math.pow(y2-y1,2)));
+    public double calcularDistancia(){
+        double distancia = (float) Math.sqrt( (Math.pow(x2-x1,2))+ (Math.pow(y2-y1,2)));
         return distancia;
     }
     
