@@ -5,6 +5,8 @@
  */
 package EjercicioExtraPOO;
 
+import Entidad.Empleado;
+
 /**
  *
  * @author denis
@@ -18,7 +20,11 @@ public class EjercicioExtra5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Empleado em1 = new Empleado();
+        em1.Registro();
+        em1.calcular_aumento();
+        
+        
     }
     
 }
