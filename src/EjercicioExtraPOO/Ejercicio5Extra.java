@@ -11,7 +11,7 @@ import Entidad.Empleado;
  *
  * @author denis
  */
-public class EjercicioExtra5 {
+public class Ejercicio5Extra {
 
     /**Crea una clase "Empleado" que tenga atributos como "nombre", "edad" y "salario".
      * Luego, crea un método "calcular_aumento" que calcule el aumento salarial de un
