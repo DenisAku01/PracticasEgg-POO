@@ -6,6 +6,7 @@
 package pooej01;
 
 import Entidad.Persona;
+import Servicio.PersonaServicio;
 
 /**
  *
@@ -18,14 +19,16 @@ public class POOej01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Persona primeraPersona = new Persona("Denis", 41977439, 23);
-        int dni = primeraPersona.getDni();
-        System.out.println("dni "+dni);
-        primeraPersona.setDni(23431);
-        System.out.println(primeraPersona.nombre);
-        int dn2 = primeraPersona.getDni();
-        System.out.println("dni "+dn2);
-        
+     //   Persona primeraPersona = new Persona("Denis", 41977439, 23);
+     //   int dni = primeraPersona.getDni();
+     //   System.out.println("dni "+dni);
+      //  primeraPersona.setDni(23431);
+      //  System.out.println(primeraPersona.nombre);
+      //  int dn2 = primeraPersona.getDni();
+      //  System.out.println("dni "+dn2);
+      PersonaServicio sp = new PersonaServicio();
+      Persona primerPersona = sp.crearPersona();
+      sp.mostrarPersona(primerPersona);
     }
     
 }

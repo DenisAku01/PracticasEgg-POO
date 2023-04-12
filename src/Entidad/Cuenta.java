@@ -15,9 +15,58 @@ import java.util.Scanner;
  * @author denis
  */
 public class Cuenta {
+    
+    //Atributos
     private double saldo;
     private String titular;
     Scanner leer = new Scanner(System.in);
+    private int dni ;
+    
+    //constructor
+
+    public Cuenta(double saldo, String titular) {
+        this.saldo = saldo;
+        this.titular = titular;
+    }
+
+    public Cuenta() {
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public String getTitular() {
+        return titular;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public Scanner getLeer() {
+        return leer;
+    }
+
+    public void setLeer(Scanner leer) {
+        this.leer = leer;
+    }
+
+    public int getDni() {
+        return dni;
+    }
+
+    public void setDni(int dni) {
+        this.dni = dni;
+    }
+    
+    
+    
+    // Metodos
     public void registro(){
         
         System.out.println("Ingrese su nombre senor titular uwu");
@@ -38,5 +87,6 @@ public class Cuenta {
             System.out.println("Su saldo Actual Ahora es de $"+saldo);
         }
     }
+    
     
 }

@@ -21,9 +21,12 @@ public class Ejercicio4Extra {
      */
     public static void main(String[] args) {
         Cuenta Cuenta1 = new Cuenta();
+        //while switch
         Cuenta1.registro();
         Cuenta1.retirar_dinero();
-        
+        Cuenta cuenta2 = new Cuenta();
+        cuenta2.registro();
+        cuenta2.retirar_dinero();
         
     }
     
