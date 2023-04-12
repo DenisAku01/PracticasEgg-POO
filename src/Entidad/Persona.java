@@ -12,9 +12,9 @@ package Entidad;
 public class Persona {
     
     //ATRIBUTOS
-    public String nombre;
-    public int dni;
-    public int edad;
+    private String nombre;
+    private int dni;
+    private int edad;
     
     
     //CONSTRUCTOR ,HACE QUE LOS PARAMETROS RECIBIDOS SE CONVIERTAN EN ATRIBUTOS DEL OBJETO
@@ -23,6 +23,10 @@ public class Persona {
         this.dni = dni;
         this.edad = edad;
     }
+
+    public Persona() {
+    }
+    
     public String getNombre(){
         return nombre;
     }
