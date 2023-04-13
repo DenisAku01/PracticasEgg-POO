@@ -22,14 +22,19 @@ public class CuentaBancaria {
     private int numeroCuenta ;
     private long dniCliente ; 
     private double saldoActual ;
-
+    private boolean activa;
+            
+            
     public CuentaBancaria() {
+        this.activa= false;
     }
 
     public CuentaBancaria(int numeroCuenta, long dniCliente) {
         this.numeroCuenta = numeroCuenta;
         this.dniCliente = dniCliente;
         this.saldoActual = 0;
+        this.activa = false;
+        
     }
 
     public int getNumeroCuenta() {
@@ -54,6 +59,14 @@ public class CuentaBancaria {
 
     public void setSaldoActual(double saldoActual) {
         this.saldoActual = saldoActual;
+    }
+
+    public boolean isActiva() {
+        return activa;
+    }
+
+    public void setActiva(boolean activa) {
+        this.activa = activa;
     }
     
     
