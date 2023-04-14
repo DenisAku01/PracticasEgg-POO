@@ -34,12 +34,11 @@ public class CuentaBancariaServicio {
     
     //Crea una Cuenta a Cero
     public CuentaBancaria crearCuenta(){
-        System.out.println("Ingrese el numero de Usuario");
-        int numCuenta = leer.nextInt();
+        
         System.out.println("Ingrese Su Numero de Dni");
         long dni = leer.nextLong();
         
-        CuentaBancaria cx = new CuentaBancaria(numCuenta,dni);
+        CuentaBancaria cx = new CuentaBancaria(dni);
         misCuentas.add(cx);
         
         return cx;
@@ -125,7 +124,7 @@ public class CuentaBancariaServicio {
                 }
             }
         }else{
-            System.out.println("Desea crear una Cuenta?");
+            System.out.println("Desea crear una Cuenta? S/N");
             String respuesta = leer.next();
             if("s".equalsIgnoreCase(respuesta)){
                 CuentaBancaria cuentaX = crearCuenta();

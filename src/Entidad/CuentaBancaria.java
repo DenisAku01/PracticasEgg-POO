@@ -19,6 +19,7 @@ package Entidad;
  * @author denis
  */
 public class CuentaBancaria {
+    private static int contador = 0000;
     private int numeroCuenta ;
     private long dniCliente ; 
     private double saldoActual ;
@@ -29,8 +30,9 @@ public class CuentaBancaria {
         this.activa= false;
     }
 
-    public CuentaBancaria(int numeroCuenta, long dniCliente) {
-        this.numeroCuenta = numeroCuenta;
+    public CuentaBancaria(long dniCliente) {
+        contador++;
+        this.numeroCuenta = contador;
         this.dniCliente = dniCliente;
         this.saldoActual = 0;
         this.activa = false;
