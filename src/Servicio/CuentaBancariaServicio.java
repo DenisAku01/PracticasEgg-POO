@@ -54,10 +54,10 @@ public class CuentaBancariaServicio {
     public void ingresar(CuentaBancaria cx){
         System.out.println("Ingrese Monto a Depositar :");
         double monto = leer.nextDouble();
+        
         cx.setSaldoActual(cx.getSaldoActual() + monto);
         consultarSaldo(cx);
     }
-    
     
     //  recibe una cantidad de dinero a retirar y se le restara al saldo actual
     public void retirar(CuentaBancaria cx){
@@ -83,8 +83,10 @@ public class CuentaBancariaServicio {
         System.out.println("Seguro que desea una Extraccion Rapida S/N");
         String valor = leer.next();
         if("s".equalsIgnoreCase(valor)){
+            double montoRetirado = cx.getSaldoActual()*0.2;
             cx.setSaldoActual(cx.getSaldoActual()*0.8);
-            System.out.println("Extraccion Perfecta"+ cx.getSaldoActual());
+            System.out.println("Extraccion Realizada con exito, le quedan"+ cx.getSaldoActual());
+            System.out.println("Extraccion fue de : $"+montoRetirado);
         }else{
             System.out.println("Regresando al Menu");
         }
@@ -144,6 +146,8 @@ public class CuentaBancariaServicio {
         int opcion = leer.nextInt();
         return opcion;
     }
+    
+    
     public void salir(CuentaBancaria cx){
         cx.setActiva(false);
         
