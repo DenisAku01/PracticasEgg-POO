@@ -41,7 +41,7 @@ public class CafeteraServicio {
             System.out.println("Quedan "+cx.getCantidadActual()+" centilitros en cafetera.");
             System.out.println("Taza "+tazax.getTamanoTaza()+ " llena con sus "+ tazax.getCantidadActual()+" centilitros de "+tazax.getCapacidad()+" centilitros");
         }
-        }
+    }
     
     
     public void servir(Cafetera cafe , Taza taza){

@@ -41,8 +41,10 @@ public class CuentaBancariaServicio {
         CuentaBancaria cx = new CuentaBancaria(dni);
         misCuentas.add(cx);
         
+        
         return cx;
     }
+    
     
     // USAR ESTA PARA EM MENU DE OPCIONES DEL ADMINISTRADOR
     public void mostrarEstadoCuenta(CuentaBancaria px){
@@ -53,8 +55,9 @@ public class CuentaBancariaServicio {
     public void ingresar(CuentaBancaria cx){
         System.out.println("Ingrese Monto a Depositar :");
         double monto = leer.nextDouble();
-        
+                            //0      + 100
         cx.setSaldoActual(cx.getSaldoActual() + monto);
+        // saldoActual = 100
         consultarSaldo(cx);
     }
     
@@ -127,6 +130,7 @@ public class CuentaBancariaServicio {
             System.out.println("Desea crear una Cuenta? S/N");
             String respuesta = leer.next();
             if("s".equalsIgnoreCase(respuesta)){
+                // titual, dni , numero de cuenta
                 CuentaBancaria cuentaX = crearCuenta();
                 cuentaX.setActiva(true);
                 do{
