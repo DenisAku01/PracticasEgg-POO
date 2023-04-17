@@ -84,6 +84,7 @@ public class CafeteraServicio {
                     llenarCafetera(cafetera);
                     break;
                 case 2 :
+                    
                     servirTaza(cafetera);
                     break;
                 case 3 :
