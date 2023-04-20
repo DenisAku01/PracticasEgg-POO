@@ -188,6 +188,8 @@ public class PersonaServicio3 {
         System.out.println("PORCENTAJE DE NORMALES:" + porcentajeNorm+ "%");
         System.out.println("PORCENTAJE DE SOBREPESO:" + porcentajeTetas+ "%");
      
+        
+        
     }
     
     
